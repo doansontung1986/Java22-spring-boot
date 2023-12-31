@@ -25,16 +25,16 @@ public class InitDB implements CommandLineRunner {
 
     public List<Book> loadDataFromJSON() {
         System.out.println("Read data from JSON file");
-        return fileReader.readFile("book.json");
+        return fileReader.readFile("src/main/resources/book.json");
     }
 
     public List<Book> loadDataFromCSV() {
         System.out.println("Read data from CSV file");
-        return fileReader.readFile("book.csv");
+        return fileReader.readFile("src/main/resources/book.csv");
     }
 
     public List<Book> loadDataFromExcel() {
         System.out.println("Read data from Excel file");
-        return fileReader.readFile("book.xlsx");
+        return fileReader.readFile("src/main/resources/book.xlsx");
     }
 }
