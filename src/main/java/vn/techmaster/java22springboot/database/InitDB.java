@@ -16,7 +16,7 @@ public class InitDB implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        BookDB.bookList = loadDataFromJSON();
+        BookDB.bookList = loadDataFromCSV();
 
         for (Book book : BookDB.bookList) {
             System.out.println(book);

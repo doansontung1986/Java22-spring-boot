@@ -2,6 +2,7 @@ package vn.techmaster.java22springboot.utils;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import vn.techmaster.java22springboot.model.Book;
 
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Primary
 public class CSVFileReader implements IFileReader {
 
     @Override
